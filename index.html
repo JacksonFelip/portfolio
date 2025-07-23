@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Oliveira - Desenvolvedor e Analista de Dados</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+    <!-- Todo o conteúdo HTML atual -->
+     <body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Jackson Oliveira</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Jackson Oliveira</h1>
+            <p class="hero-subtitle">Desenvolvedor e Analista de Dados</p>
+            <p class="hero-description">
+                
+                Desenvolvedor com formação em Ciência da Computação e forte interesse em construir soluções web eficientes.
+                Possuo conhecimento prático em Python, SQL, JavaScript, HTML e CSS, e atualmente estou aprofundando minhas habilidades em ReactJS para criação de interfaces dinâmicas.
+                Tenho experiência com análise de dados e processos ETL, o que me permite criar aplicações orientadas a dados. Busco uma oportunidade como programador para aplicar meu conhecimento técnico, 
+                colaborar com equipes de desenvolvimento e criar produtos de valor.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Ver Projetos
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Entrar em Contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3 class="project-title">Sala de Perguntas</h3>
+                <p class="project-description">
+                    Plataforma interativa para criação e gerenciamento de salas de perguntas e respostas em tempo real.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">EJS</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS3</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JacksonFelip/sala-de-perguntas" class="project-link">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="project-title">Salão de Beleza</h3>
+                <p class="project-description">
+                    Website moderno e responsivo para salão de beleza com design elegante e funcionalidades intuitivas.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Responsive</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JacksonFelip/salao-de-beleza" class="project-link">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3 class="project-title">Portal de Turismo</h3>
+                <p class="project-description">
+                    Plataforma digital para promoção de destinos turísticos com interface atrativa e navegação fluida.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">UI/UX</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JacksonFelip/Turismo" class="project-link">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <h3 class="project-title">Clone Instagram</h3>
+                <p class="project-description">
+                    Recriação da interface do Instagram com foco em design responsivo e experiência do usuário.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">Flexbox</span>
+                    <span class="tech-tag">Grid</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JacksonFelip/Instagram" class="project-link">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="project-title">Portal Educacional</h3>
+                <p class="project-description">
+                    Sistema educacional completo para gestão de conteúdo e acompanhamento de estudantes.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/JacksonFelip/educacao-senador-porfirio" class="project-link">
+                        <i class="fab fa-github"></i> Código
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section fade-in">
+        <h2 class="section-title">Habilidades & Tecnologias</h2>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <div class="skill-item">
+                    <span>HTML5</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>CSS3</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>React</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-item">
+                    <span>Node.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>EJS</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Express.js</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>API REST</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                <div class="skill-item">
+                    <span>Git & GitHub</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>VS Code</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Figma</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>npm/yarn</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-paint-brush"></i> Design</h3>
+                <div class="skill-item">
+                    <span>UI/UX Design</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Responsive Design</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Design Systems</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Animation</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> IA & Dados</h3>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Vibe Coding</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Engenharia de Prompt</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                    </div>
+
+            
+        </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+        <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 style="margin-bottom: 2rem; color: var(--accent-color);">Entre em Contato</h3>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>cmte.jackson@hotmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/JacksonFelip</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/jackson-felipe</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Localização</h4>
+                        <p>Ananindeua-PA, Brasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="margin-bottom: 2rem; color: var(--accent-color);">Envie uma Mensagem</h3>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/JacksonFelip" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/jackson-felipe" class="social-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/jackson_felipe" class="social-link" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/jackson.felipe" class="social-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
+        <p>&copy; 2025 Jackson Oliveira. Todos os direitos reservados.</p>
+        <p style="margin-top: 0.5rem; color: var(--text-muted);">
+            Desenvolvido com <i class="fas fa-heart" style="color: #f5576c;"></i> e muito código
+        </p>
+    </footer>
+
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
