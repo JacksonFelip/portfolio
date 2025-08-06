@@ -1,6 +1,6 @@
 # Portfólio - Jackson Oliveira
 
-Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
+Meu portfólio profissional mostrando meus projetos e habilidades.
 
 ## 🚀 Tecnologias
 
@@ -9,16 +9,12 @@ Portfólio profissional desenvolvido com HTML, CSS e JavaScript.
 - JavaScript
 - Three.js
 
-## 📦 Como usar
+## 💻 Projeto
 
-1. Clone o repositório
-```bash
-git clone https://github.com/JacksonFelip/portfolio.git
-```
+Este portfólio foi desenvolvido para mostrar meus projetos e habilidades como desenvolvedor e analista de dados.
 
-2. Acesse a pasta do projeto
-```bash
-cd portfolio
-```
+## 🔗 Links
 
-3. Abra o arquivo index.html no seu navegador ou use um servidor local
+- [GitHub](https://github.com/JacksonFelip)
+- [LinkedIn](https://www.linkedin.com/in/jackson-oliveira16/)
+
