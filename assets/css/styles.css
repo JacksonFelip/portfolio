@@ -180,6 +180,20 @@
             border: 2px solid var(--primary-color);
         }
 
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
@@ -511,7 +525,12 @@
             
             .cta-buttons {
                 flex-direction: column;
-                align-items: center;
+                width: 100%;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                text-align: center;
             }
             
             .projects-grid {
