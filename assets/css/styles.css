@@ -68,6 +68,7 @@
             font-weight: 700;
             background: var(--gradient-1);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
@@ -108,12 +109,72 @@
         /* Hero Section */
         .hero {
             min-height: 100vh;
+            position: relative;
+            padding: 6rem 2rem;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-profile {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 280px;
+            height: 310px;
+            margin: 0 auto 2rem;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 3px solid var(--accent-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .profile-social a {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            position: relative;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-social a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+            color: white;
         }
 
         .hero-content {
@@ -122,51 +183,42 @@
         }
 
         .hero-title {
-            font-size: clamp(3rem, 8vw, 6rem);
-            font-weight: 700;
+            font-size: 3rem;
             margin-bottom: 1rem;
-            background: var(--gradient-1);
+            background: linear-gradient(45deg, var(--accent-color), #fff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: fadeInUp 1s ease-out;
         }
 
         .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 2rem);
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease-out 0.2s both;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
         }
 
         .hero-description {
             font-size: 1.1rem;
             line-height: 1.8;
-            margin-bottom: 3rem;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 600px;
         }
 
         .cta-buttons {
             display: flex;
             gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.6s both;
+            margin-top: 2rem;
         }
 
         .btn {
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            padding: 0.8rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 500;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            position: relative;
-            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
         .btn-primary {
@@ -538,7 +590,24 @@
             }
         }
 
-        /* Scroll animations */
+        @media (max-width: 968px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-profile {
+        order: -1;
+    }
+
+    .profile-image {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+/* Scroll animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);

@@ -7,6 +7,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("wlZ6Zzl7yMneKTtvx"); // Substitua pelo seu public key do EmailJS
+        })();
+    </script>
 </head>
 
     <!-- Todo o conteúdo HTML atual -->
@@ -33,30 +39,42 @@
             <div class="floating-element"></div>
         </div>
         
-        <div class="hero-content">
-            <h1 class="hero-title">Jackson Oliveira</h1>
-            <p class="hero-subtitle">Desenvolvedor e Analista de Dados</p>
-            <p class="hero-description">
-                
-                Desenvolvedor com formação em Ciência da Computação e forte interesse em construir soluções web eficientes.
-                Possuo conhecimento prático em Python, SQL, JavaScript, HTML e CSS, e atualmente estou aprofundando minhas habilidades em ReactJS para criação de interfaces dinâmicas.
-                Tenho experiência com análise de dados e processos ETL, o que me permite criar aplicações orientadas a dados. Busco uma oportunidade como programador para aplicar meu conhecimento técnico, 
-                colaborar com equipes de desenvolvimento e criar produtos de valor.
-            </p>
+        <div class="hero-container">
+            <div class="hero-profile">
+                <div class="profile-image">
+                    <img src="./assets/img/profile.jpg" alt="Jackson Oliveira" />
+                </div>
+                <div class="profile-social">
+                    <a href="https://github.com/JacksonFelip" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jackson-oliveira16/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:cmte.jackson@hotmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
             
-            <div class="cta-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <i class="fas fa-rocket"></i>
-                    Ver Projetos
-                </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-envelope"></i>
-                    Entrar em Contato
-                </a>
-                <a href="./assets/docs/Curriculo.pdf" class="btn btn-outline" download>
-                    <i class="fas fa-file-download"></i>
-                    Baixar Currículo
-                </a>
+            <div class="hero-content">
+                <h1 class="hero-title">Jackson Oliveira</h1>
+                <p class="hero-subtitle">Desenvolvedor e Analista de Dados</p>
+                <p class="hero-description">
+                    
+                    Desenvolvedor com formação em Ciência da Computação e forte interesse em construir soluções web eficientes.
+                    Possuo conhecimento prático em Python, SQL, JavaScript, HTML e CSS, e atualmente estou aprofundando minhas habilidades em ReactJS para criação de interfaces dinâmicas.
+                    Tenho experiência com análise de dados e processos ETL, o que me permite criar aplicações orientadas a dados.
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Entrar em Contato
+                    </a>
+                    <a href="./assets/docs/Curriculo.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-file-download"></i>
+                        Baixar Currículo
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -176,6 +194,41 @@
         <h2 class="section-title">Habilidades & Tecnologias</h2>
         
         <div class="skills-container">
+              <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> IA & Dados</h3>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Power BI</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>SQL</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Excel Avançado</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span>Engenharia de Prompt</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
             <div class="skill-category">
                 <h3><i class="fas fa-code"></i> Frontend</h3>
                 <div class="skill-item">
@@ -200,6 +253,12 @@
                     <span>React</span>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Vibe Coding</span>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
                     </div>
                 </div>
             </div>
@@ -261,29 +320,6 @@
             </div>
 
             
-            <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> IA & Dados</h3>
-                <div class="skill-item">
-                    <span>Python</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Vibe Coding</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Engenharia de Prompt</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                    </div>
-
-            
         </div>
     </section>
 
@@ -320,7 +356,7 @@
                     </div>
                     <div>
                         <h4>LinkedIn</h4>
-                        <p>linkedin.com/in/jackson-felipe</p>
+                        <p>linkedin.com/in/jackson-oliveira16</p>
                     </div>
                 </div>
 
@@ -336,36 +372,27 @@
             </div>
 
             <div class="contact-form">
-                <h3 style="margin-bottom: 2rem; color: var(--accent-color);">Envie uma Mensagem</h3>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">
-                        <i class="fas fa-paper-plane"></i>
-                        Enviar Mensagem
-                    </button>
-                </form>
-            </div>
+    <form id="contact-form" onsubmit="return sendMail(event)">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
         </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+    </form>
+</div>
+        </div>
+
+
     </section>
 
     <footer>
@@ -373,11 +400,8 @@
             <a href="https://github.com/JacksonFelip" class="social-link" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/jackson-felipe" class="social-link" target="_blank">
+            <a href="https://www.linkedin.com/in/jackson-oliveira16/" class="social-link" target="_blank">
                 <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/jackson_felipe" class="social-link" target="_blank">
-                <i class="fab fa-twitter"></i>
             </a>
             <a href="https://instagram.com/jackson.felipe" class="social-link" target="_blank">
                 <i class="fab fa-instagram"></i>

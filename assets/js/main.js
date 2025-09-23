@@ -1,4 +1,3 @@
-
 let scene, camera, renderer, particles;
 
 function initBackground() {
@@ -135,6 +134,55 @@ function initBackground() {
                 }, 3000);
             }, 2000);
         });
+        
+        function sendMail(event) {
+            event.preventDefault();
+            
+            const btn = document.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            btn.disabled = true;
+
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.send('service_4d7lkpb', 'template_3qbya0v', templateParams)
+                .then(function(response) {
+                    showFeedback('success', 'Mensagem enviada com sucesso! Retornarei em breve.');
+                    document.getElementById('contact-form').reset();
+                }, function(error) {
+                    showFeedback('error', 'Erro ao enviar mensagem. Por favor, tente novamente.');
+                })
+                .finally(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                });
+
+            return false;
+        }
+
+        function showFeedback(type, message) {
+            const feedback = document.createElement('div');
+            feedback.className = `form-${type}`;
+            feedback.textContent = message;
+            
+            const form = document.getElementById('contact-form');
+            const existingFeedback = form.querySelector('.form-success, .form-error');
+            if (existingFeedback) {
+                existingFeedback.remove();
+            }
+            
+            form.appendChild(feedback);
+            feedback.style.display = 'block';
+            
+            setTimeout(() => {
+                feedback.style.opacity = '0';
+                setTimeout(() => feedback.remove(), 300);
+            }, 5000);
+        }
         
         // Typing effect for hero title
         function typeWriter(element, text, speed = 100) {
