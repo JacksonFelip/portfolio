@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackson Oliveira - Desenvolvedor e Analista de Dados</title>
+    <title>Jackson Oliveira - Desenvolvedor RPA</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("wlZ6Zzl7yMneKTtvx"); // Substitua pelo seu public key do EmailJS
+            emailjs.init("wlZ6Zzl7yMneKTtvx"); 
         })();
     </script>
 </head>
-
-    <!-- Todo o conteúdo HTML atual -->
-     <body>
+<body>
     <canvas id="bg-canvas"></canvas>
     
     <nav id="navbar">
@@ -24,6 +22,7 @@
             <div class="logo">Jackson Oliveira</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experiência</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -53,27 +52,46 @@
             
             <div class="hero-content">
                 <h1 class="hero-title">Jackson Oliveira</h1>
-                <p class="hero-subtitle">Desenvolvedor e Analista de Dados</p>
+                <p class="hero-subtitle">Desenvolvedor RPA</p>
                 <p class="hero-description">
-                    
-                    Desenvolvedor com formação em Ciência da Computação e forte interesse em construir soluções web eficientes.
-                    Possuo conhecimento prático em Python, SQL, JavaScript, HTML e CSS, e atualmente estou aprofundando minhas habilidades em ReactJS para criação de interfaces dinâmicas.
-                    Tenho experiência com análise de dados e processos ETL, o que me permite criar aplicações orientadas a dados.
+                    Desenvolvedor com sólida experiência em Automação Robótica de Processos (RPA) com UiPath. Atuo na identificação, modelagem e automação de processos, focando na redução de tempo manual e aumento de produtividade. Possuo conhecimento em integração de IA, análise de dados e desenvolvimento front-end com ReactJS.
                 </p>
                 
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        Ver Projetos
+                        <i class="fas fa-robot"></i>
+                        Ver Soluções
                     </a>
                     <a href="#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i>
                         Entrar em Contato
                     </a>
-                    <a href="./assets/docs/Curriculo.pdf" class="btn btn-outline" download>
+                    <a href="./assets/docs/Curriculo_Jackson_Oliveira.pdf" class="btn btn-outline" download>
                         <i class="fas fa-file-download"></i>
                         Baixar Currículo
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section fade-in">
+        <h2 class="section-title">Experiência Profissional</h2>
+        <div class="experience-timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Auxiliar Administrativo / Desenvolvedor RPA</h3>
+                    <h4>JGS Corretores de Seguros <span>| Maio 2024 – Atual</span></h4>
+                    <p>Desenvolvimento e implantação de soluções RPA com UiPath no sistema Quiver. Mapeamento de processos repetitivos, modelagem de workflows, integração com IA para suporte à tomada de decisão e emissão de apólices com garantia de aderência às regras de negócio.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Desenvolvedor Freelancer</h3>
+                    <h4>Projetos Independentes <span>| Junho 2023 – Atual</span></h4>
+                    <p>Desenvolvimento front-end e análise de dados para plataforma de controle educacional. Utilização de ReactJS, Python e Inteligência Artificial para a criação de soluções orientadas a dados e interfaces modernas utilizando Vibe Coding.</p>
                 </div>
             </div>
         </div>
@@ -83,106 +101,51 @@
         <h2 class="section-title">Projetos em Destaque</h2>
         
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    <i class="fas fa-question-circle"></i>
+            <div class="project-card rpa-card">
+                <div class="project-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3 class="project-title">Automação de Seguros (Quiver)</h3>
+                <p class="project-description">
+                    Solução RPA implementada para automatizar fluxos de cadastros de apólices, endossos e faturas, reduzindo tempo operacional e erros manuais.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">UiPath</span>
+                    <span class="tech-tag">RPA</span>
+                    <span class="tech-tag">Document Understanding</span>
+                </div>
+            </div>
+
+            <div class="project-card ai-card">
+                <div class="project-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="project-title">Plataforma de Gestão Educacional</h3>
+                <p class="project-description">
+                    Sistema desenvolvido com inteligência artificial para controle e gestão educacional, com análise de dados avançada e UI moderna.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">ReactJS</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Vibe Coding</span>
+                </div>
+            </div>
+
+            <div class="project-card code-card">
+                <div class="project-icon">
+                    <i class="fas fa-comments"></i>
                 </div>
                 <h3 class="project-title">Sala de Perguntas</h3>
                 <p class="project-description">
                     Plataforma interativa para criação e gerenciamento de salas de perguntas e respostas em tempo real.
                 </p>
                 <div class="project-tech">
-                    <span class="tech-tag">EJS</span>
                     <span class="tech-tag">Node.js</span>
                     <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">EJS</span>
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/JacksonFelip/sala-de-perguntas" class="project-link">
-                        <i class="fab fa-github"></i> Código
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    <i class="fas fa-cut"></i>
-                </div>
-                <h3 class="project-title">Salão de Beleza</h3>
-                <p class="project-description">
-                    Website moderno e responsivo para salão de beleza com design elegante e funcionalidades intuitivas.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Responsive</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JacksonFelip/salao-de-beleza" class="project-link">
-                        <i class="fab fa-github"></i> Código
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <h3 class="project-title">Portal de Turismo</h3>
-                <p class="project-description">
-                    Plataforma digital para promoção de destinos turísticos com interface atrativa e navegação fluida.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">UI/UX</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JacksonFelip/Turismo" class="project-link">
-                        <i class="fab fa-github"></i> Código
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <h3 class="project-title">Clone Instagram</h3>
-                <p class="project-description">
-                    Recriação da interface do Instagram com foco em design responsivo e experiência do usuário.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">Flexbox</span>
-                    <span class="tech-tag">Grid</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JacksonFelip/Instagram" class="project-link">
-                        <i class="fab fa-github"></i> Código
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-icon" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <h3 class="project-title">Portal Educacional</h3>
-                <p class="project-description">
-                    Sistema educacional completo para gestão de conteúdo e acompanhamento de estudantes.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Bootstrap</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/JacksonFelip/educacao-senador-porfirio" class="project-link">
                         <i class="fab fa-github"></i> Código
                     </a>
                 </div>
@@ -191,149 +154,80 @@
     </section>
 
     <section id="skills" class="section fade-in">
-        <h2 class="section-title">Habilidades & Tecnologias</h2>
+        <h2 class="section-title">Tecnologias & Competências</h2>
         
         <div class="skills-container">
-              <div class="skill-category">
-                <h3><i class="fas fa-brain"></i> IA & Dados</h3>
+            <div class="skill-category">
+                <h3><i class="fas fa-cogs"></i> Automação RPA</h3>
+                <div class="skill-item">
+                    <span>UiPath (Studio/Robot/Orch.)</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Document Understanding</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>C#</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Modelagem de Processos</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><i class="fas fa-chart-line"></i> IA & Dados</h3>
                 <div class="skill-item">
                     <span>Python</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                 </div>
                 <div class="skill-item">
                     <span>Power BI</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span>SQL</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
+                    <span>SQL / ETL</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span>Excel Avançado</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-item">
-                    <span>Engenharia de Prompt</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
+                    <span>Integração de IA</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                 </div>
             </div>
 
             <div class="skill-category">
-                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <h3><i class="fas fa-code"></i> Front-End & Web</h3>
                 <div class="skill-item">
-                    <span>HTML5</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>CSS3</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
+                    <span>ReactJS</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                 </div>
                 <div class="skill-item">
                     <span>JavaScript</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <span>React</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
+                    <span>HTML5 / CSS3</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                 </div>
                 <div class="skill-item">
                     <span>Vibe Coding</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                 </div>
             </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-server"></i> Backend</h3>
-                <div class="skill-item">
-                    <span>Node.js</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>EJS</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Express.js</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>API REST</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><i class="fas fa-tools"></i> Ferramentas</h3>
-                <div class="skill-item">
-                    <span>Git & GitHub</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>VS Code</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Figma</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>npm/yarn</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 85%"></div>
-                    </div>
-                </div>
-            </div>
-
-            
         </div>
     </section>
 
     <section id="contact" class="section fade-in">
-        <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+        <h2 class="section-title">Vamos Automatizar?</h2>
         
         <div class="contact-container">
             <div class="contact-info">
                 <h3 style="margin-bottom: 2rem; color: var(--accent-color);">Entre em Contato</h3>
                 
                 <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                     <div>
                         <h4>Email</h4>
                         <p>cmte.jackson@hotmail.com</p>
@@ -341,9 +235,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
                     <div>
                         <h4>GitHub</h4>
                         <p>github.com/JacksonFelip</p>
@@ -351,9 +243,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
                     <div>
                         <h4>LinkedIn</h4>
                         <p>linkedin.com/in/jackson-oliveira16</p>
@@ -361,9 +251,7 @@
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div>
                         <h4>Localização</h4>
                         <p>Ananindeua-PA, Brasil</p>
@@ -372,49 +260,38 @@
             </div>
 
             <div class="contact-form">
-    <form id="contact-form" onsubmit="return sendMail(event)">
-        <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required>
+                <form id="contact-form" onsubmit="return sendMail(event)">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Mensagem</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">
-            <i class="fas fa-paper-plane"></i> Enviar Mensagem
-        </button>
-    </form>
-</div>
-        </div>
-
-
     </section>
 
     <footer>
         <div class="social-links">
-            <a href="https://github.com/JacksonFelip" class="social-link" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jackson-oliveira16/" class="social-link" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://instagram.com/jackson.felipe" class="social-link" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <a href="https://github.com/JacksonFelip" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jackson-oliveira16/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-        
-        <p>&copy; 2025 Jackson Oliveira. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Jackson Oliveira. Todos os direitos reservados.</p>
         <p style="margin-top: 0.5rem; color: var(--text-muted);">
-            Desenvolvido com <i class="fas fa-heart" style="color: #f5576c;"></i> e muito código
+            Automatizando processos com <i class="fas fa-robot" style="color: var(--accent-color);"></i> e eficiência
         </p>
     </footer>
 
-    
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
